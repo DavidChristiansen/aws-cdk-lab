@@ -1,0 +1,65 @@
+{
+	"app": "node bin/infra.js",
+	"context": {
+		"availability-zones:account=351291610610:region=eu-west-2": [
+			"eu-west-2a",
+			"eu-west-2b",
+			"eu-west-2c"
+		],
+		"ssm:account=351291610610:parameterName=/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2:region=eu-west-2": "ami-0274e11dced17bb5b",
+		"vpc-provider:account=351291610610:filter.vpc-id=vpc-0a2ae78aa83dd9156:region=eu-west-2": {
+			"vpcId": "vpc-0a2ae78aa83dd9156",
+			"availabilityZones": [
+				"eu-west-2a",
+				"eu-west-2b",
+				"eu-west-2c"
+			],
+			"isolatedSubnetIds": [
+				"subnet-0d8ca5270033ef76c",
+				"subnet-0ac51d72b5595f920",
+				"subnet-0f95f312935fc1000"
+			],
+			"isolatedSubnetNames": [
+				"Database"
+			],
+			"privateSubnetIds": [
+				"subnet-0109d1da08f85b63c",
+				"subnet-07dacd36cc07c8e26",
+				"subnet-0f3be666cf6467e7c"
+			],
+			"privateSubnetNames": [
+				"Private"
+			],
+			"publicSubnetIds": [
+				"subnet-01180d235d7dd80eb",
+				"subnet-078e7edd8f126fa0c",
+				"subnet-0ba4aee0a9385967e"
+			],
+			"publicSubnetNames": [
+				"Public"
+			]
+		},
+		"availability-zones:account=351291610610:region=us-west-1": [
+			"us-west-1b",
+			"us-west-1c"
+		],
+		"availability-zones:account=351291610610:region=us-east-1": [
+			"us-east-1a",
+			"us-east-1b",
+			"us-east-1c",
+			"us-east-1d",
+			"us-east-1e",
+			"us-east-1f"
+		],
+		"availability-zones:account=351291610610:region=eu-west-1": [
+			"eu-west-1a",
+			"eu-west-1b",
+			"eu-west-1c"
+		],
+		"availability-zones:account=503084366867:region=eu-west-1": [
+			"eu-west-1a",
+			"eu-west-1b",
+			"eu-west-1c"
+		]
+	}
+}

@@ -1,0 +1,39 @@
+{
+	"name": "infra",
+	"version": "0.1.0",
+	"main": "bin/index.js",
+	"types": "bin/index.d.ts",
+	"bin": {
+		"infra": "bin/infra.js"
+	},
+	"scripts": {
+		"build": "tsc",
+		"watch": "tsc -w",
+		"cdk": "cdk",
+		"synth-infra": "cdk synth -o dist -c CustomerGatewayIP=151.228.214.206 --app bin/infra.js",
+		"synth-app": "cdk synth -o dist --app bin/app.js"
+	},
+	"devDependencies": {
+		"@types/node": "^10.12.18",
+		"aws-cdk": "^0.22.0",
+		"fluent.aws-cdk": "^0.1.3-alpha",
+		"typescript": "^3.2.2",
+		"xml2js": "^0.4.19"
+	},
+	"dependencies": {
+		"@aws-cdk/app-delivery": "^0.22.0",
+		"@aws-cdk/aws-apigateway": "^0.22.0",
+		"@aws-cdk/aws-autoscaling": "^0.22.0",
+		"@aws-cdk/aws-codebuild": "^0.22.0",
+		"@aws-cdk/aws-codecommit": "^0.22.0",
+		"@aws-cdk/aws-codepipeline": "^0.22.0",
+		"@aws-cdk/aws-ec2": "^0.22.0",
+		"@aws-cdk/aws-elasticloadbalancing": "^0.22.0",
+		"@aws-cdk/aws-rds": "^0.22.0",
+		"@aws-cdk/aws-ssm": "^0.22.0",
+		"@aws-cdk/cdk": "^0.22.0",
+		"aws-sdk": "^2.382.0",
+		"chalk": "^2.4.1",
+		"log-symbols": "^2.2.0"
+	}
+}
